@@ -25,4 +25,6 @@ jobs:
       
     - name: Build nuget package 
       shell:  pwsh
-      run: ls ${{ github.workspace }}
+      run: |
+        ls ${{ github.workspace }}\main
+        ls ${{ github.workspace }}\main2
