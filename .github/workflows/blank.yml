@@ -30,6 +30,6 @@ jobs:
         ls ${{ github.workspace }}\main2
 
     - name: Call reusable workflow 
-      uses:  https://github.com/lucasAntunesTam/CICD_Pipeline/blob/main/.github/workflows/ReusableWorkflow.yml@main
+      uses:  lucasAntunesTam/CICD_Pipeline/.github/workflows/ReusableWorkflow.yml@main
       with:
         test: ${{ github.workspace }}
